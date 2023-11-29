@@ -235,7 +235,7 @@ const generateLanguageStatsChart = (data) => {
         title: "Weekly Language Stats",
         data: data.languages.slice(0, 5),
         fill: (datum) =>
-            languageColors[datum.name] ? languageColors[datum.name].color : "#38bdae",
+            languageColors[datum.name] ? languageColors[datum.name].color : "#70a5fd",
     });
 
     saveChart(body, "generated/wakatime_weekly_language_stats.svg");
@@ -247,7 +247,7 @@ const generateProjectStatsChart = (data) => {
     drawStatsChart(body, {
         title: "Weekly Project Stats",
         data: data.projects.slice(0, 5),
-        fill: "#438cee",
+        fill: "#38bdae",
         measurements: {
             namesWidth: 150,
         },
