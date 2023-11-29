@@ -213,12 +213,12 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
         .durationBar { transform: scaleX(0); animation: scaleXInAnimation 0.5s ease-in-out forwards; }
         .titleText { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; animation: fadeInAnimation 0.8s ease-in-out forwards; }
         @keyframes fadeInAnimation {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
+            0%   { opacity: 0; }
+            100% { opacity: 1; }
         }
         @keyframes scaleXInAnimation {
-        0%   { transform: scaleX(0); }
-        100% { transform: scaleX(1); }
+            0%   { transform: scaleX(0); }
+            100% { transform: scaleX(1); }
         }
     `);
 };
@@ -235,7 +235,7 @@ const generateLanguageStatsChart = (data) => {
         title: "Weekly Language Stats",
         data: data.languages.slice(0, 5),
         fill: (datum) =>
-            languageColors[datum.name] ? languageColors[datum.name].color : "#333333",
+            languageColors[datum.name] ? languageColors[datum.name].color : "#38bdae",
     });
 
     saveChart(body, "generated/wakatime_weekly_language_stats.svg");
