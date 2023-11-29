@@ -247,7 +247,7 @@ const generateProjectStatsChart = (data) => {
     drawStatsChart(body, {
         title: "Weekly Project Stats",
         data: data.projects.slice(0, 5),
-        fill: "#38bdae",
+        fill: "#70a5fd",
         measurements: {
             namesWidth: 150,
         },
