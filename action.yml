@@ -1,5 +1,5 @@
-name: "WakaTime Stats Charts Generator"
-author: Divya Jain
+name: "WakaTime Stats Charts Generator - TokyoNight Theme"
+author: Fr4nk1inCs
 description: "Generates WakaTime Stats Charts to use in README.md"
 
 inputs:
