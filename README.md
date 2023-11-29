@@ -1,6 +1,6 @@
 <div align="center">
 
-![wakatime-charts](https://socialify.git.ci/dvjn/wakatime-charts/image?description=1&font=Inter&owner=1&pattern=Charlie%20Brown&theme=Light "wakatime charts")
+![wakatime-charts](https://socialify.git.ci/Fr4nk1inCs/wakatime-charts/image?description=1&font=Source%20Code%20Pro&name=1&owner=1&pattern=Plus&theme=Dark)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Fr4nk1inCs/wakatime-charts?color=%23dfb317&style=for-the-badge "Github Repo stars")
 ![GitHub forks](https://img.shields.io/github/forks/Fr4nk1inCs/wakatime-charts?color=%2397ca00&style=for-the-badge "Github forks")
