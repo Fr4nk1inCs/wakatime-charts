@@ -105,7 +105,7 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
         .attr("offset", "0");
     overflowGradient
         .append("stop")
-        .attr("stop-color", "rgba(26, 37, 39, 1)")
+        .attr("stop-color", "rgba(26, 27, 39, 1)")
         .attr("offset", "1");
 
     // Names
