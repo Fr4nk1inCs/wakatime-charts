@@ -4,11 +4,11 @@
         .durationBar { transform: scaleX(0); animation: scaleXInAnimation 0.5s ease-in-out forwards; }
         .titleText { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; animation: fadeInAnimation 0.8s ease-in-out forwards; }
         @keyframes fadeInAnimation {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
+            0%   { opacity: 0; }
+            100% { opacity: 1; }
         }
         @keyframes scaleXInAnimation {
-        0%   { transform: scaleX(0); }
-        100% { transform: scaleX(1); }
+            0%   { transform: scaleX(0); }
+            100% { transform: scaleX(1); }
         }
     </style></svg>
