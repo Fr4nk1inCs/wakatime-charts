@@ -74,7 +74,7 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
         .attr("x", 1)
         .attr("y", 1)
         .attr("rx", 4.5)
-        .attr("fill", "rgb(26, 27, 39)")
+        .attr("fill", "rgb(46, 52, 64)")
         .attr("stroke-opacity", 0);
 
     // Header
@@ -101,11 +101,11 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
         .attr("id", "overflowGradient");
     overflowGradient
         .append("stop")
-        .attr("stop-color", "rgba(26, 27, 39, 0)")
+        .attr("stop-color", "rgba(46, 52, 64, 0)")
         .attr("offset", "0");
     overflowGradient
         .append("stop")
-        .attr("stop-color", "rgba(26, 27, 39, 1)")
+        .attr("stop-color", "rgba(46, 52, 64, 1)")
         .attr("offset", "1");
 
     // Names
@@ -208,10 +208,10 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
     // Styles
 
     svg.append("style").html(`
-        text { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae }
+        text { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #d8dee9 }
         .nameText, .durationText { opacity: 0; animation: fadeInAnimation 0.5s ease-in-out forwards; }
         .durationBar { transform: scaleX(0); animation: scaleXInAnimation 0.5s ease-in-out forwards; }
-        .titleText { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; animation: fadeInAnimation 0.8s ease-in-out forwards; }
+        .titleText { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #81a1c1; animation: fadeInAnimation 0.8s ease-in-out forwards; }
         @keyframes fadeInAnimation {
             0%   { opacity: 0; }
             100% { opacity: 1; }
@@ -235,7 +235,7 @@ const generateLanguageStatsChart = (data) => {
         title: "Weekly Language Stats",
         data: data.languages.slice(0, 5),
         fill: (datum) =>
-            languageColors[datum.name] ? languageColors[datum.name].color : "#bf91f3",
+            languageColors[datum.name] ? languageColors[datum.name].color : "#88c0d0",
     });
 
     saveChart(body, "generated/wakatime_weekly_language_stats.svg");
@@ -247,7 +247,7 @@ const generateProjectStatsChart = (data) => {
     drawStatsChart(body, {
         title: "Weekly Project Stats",
         data: data.projects.slice(0, 5),
-        fill: "#bf91f3",
+        fill: "#88c0d0",
         measurements: {
             namesWidth: 150,
         },
