@@ -75,7 +75,9 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
         .attr("y", 1)
         .attr("rx", 4.5)
         .attr("fill", "rgb(46, 52, 64)")
-        .attr("stroke-opacity", 0);
+        .attr("stroke", "rgb(236, 239, 244)")
+        .attr("stroke-width", 1)
+        .attr("stroke-opacity", 1);
 
     // Header
 
@@ -208,10 +210,10 @@ const drawStatsChart = (body, { title, data, fill, measurements = {} }) => {
     // Styles
 
     svg.append("style").html(`
-        text { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #d8dee9 }
+        text { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #d8dee9 }
         .nameText, .durationText { opacity: 0; animation: fadeInAnimation 0.5s ease-in-out forwards; }
         .durationBar { transform: scaleX(0); animation: scaleXInAnimation 0.5s ease-in-out forwards; }
-        .titleText { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #81a1c1; animation: fadeInAnimation 0.8s ease-in-out forwards; }
+        .titleText { font: 400 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #eceff4; animation: fadeInAnimation 0.8s ease-in-out forwards; }
         @keyframes fadeInAnimation {
             0%   { opacity: 0; }
             100% { opacity: 1; }
